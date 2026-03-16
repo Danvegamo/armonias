@@ -97,12 +97,25 @@ header{
       height: 100vh;
       display: flex;
       align-items: center;
-     
+      overflow: hidden;
+  }
+  .dive-club-section.hero-actividades {
       background-image: 
           linear-gradient(to right, #081c15 0%, #081c1523 30%),
           linear-gradient(to top, #081c15 0%, #081c1523 20%),
-          url('/img/fondoActividades.jpg');
-      overflow: hidden;
+          url('../img/header_actividades.png');
+  }
+  .dive-club-section.hero-preparacion {
+      background-image: 
+          linear-gradient(to right, #081c15 0%, #081c1523 30%),
+          linear-gradient(to top, #081c15 0%, #081c1523 20%),
+          url('../img/header_preparacion.png');
+  }
+  .dive-club-section.hero-nosotros {
+      background-image: 
+          linear-gradient(to right, #081c15 0%, #081c1523 30%),
+          linear-gradient(to top, #081c15 0%, #081c1523 20%),
+          url('../img/header_nosotros.png');
   }
   
   .text-content {
