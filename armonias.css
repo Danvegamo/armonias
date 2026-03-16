@@ -47,12 +47,12 @@ header{
 }
 .navbar ul li a:hover {
   background-color: transparent;
-  border-bottom: 2px solid #83c23c;
+  border-bottom: 2px solid #6a994e;
   border-radius: 4px;
   transition: border-bottom-color 0.3s;
 }
 .contact {
-  background-color: #32cd32;
+  background-color: #6a994e;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -62,7 +62,7 @@ header{
   border-radius: 50px;
 }
 .contact:hover {
-  background-color: #28a745; 
+  background-color: #6a994e; 
   color: #fff; 
   transition: background-color 0.3s ease-in-out; 
 }
@@ -232,7 +232,7 @@ main {
   font-size: 1rem; 
   font-weight: 700;
   color: #fff;
-  background-color: #32cd32;
+  background-color: #6a994e;
   border-radius: 5px;
 }
 
@@ -370,7 +370,7 @@ main {
 .read-more-btn {
   padding: 10px 20px;
   font-size: 1em;
-  background-color: #32cd32;
+  background-color: #6a994e;
   color: white;
   border: none;
   cursor: pointer;
@@ -378,7 +378,7 @@ main {
 }
 
 .read-more-btn:hover {
-  background-color: #2a9210; 
+  background-color: #6a994e; 
 }
 
 .calendar-container {
@@ -662,7 +662,7 @@ body {
 
 
 button {
-  background-color: #32cd32;
+  background-color: #6a994e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -676,7 +676,7 @@ button {
 }
 
 button:hover {
-  background-color: #2a9210;
+  background-color: #6a994e;
 }
 
 .card1 {
@@ -814,7 +814,7 @@ footer {
 }
 
 .footer-content button {
-  background-color: #32cd32;
+  background-color: #6a994e;
   color: #2e3b39;
   border: none;
   padding: 15px 30px;

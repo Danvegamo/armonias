@@ -109,6 +109,336 @@
         </div>
     </div>
 
+    <!-- resultados -->
+     <div class="proceso">
+    <div class="content">
+        <img src="/img/preparacion/d1-d.webp" alt="Image 1" class="popup-image">
+        <div class="text">
+            <div class="title">Cuarta sesión (18 de julio del 2024): Trabajo con Pigmentos Naturales</div>
+            <p>Nuestra cuarta sesión se centró en los pigmentos naturales. Aprendimos a crear y comprender la diferencia entre pigmentos en seco y en húmedo, utilizando materiales como cúrcuma, carbón, óxido ferroso y aceites naturales. Trabajamos sobre tela costeña para darle un contexto cultural a nuestro arte. Esta sesión marcó el inicio de trabajos en paralelo en las cuatro rutas del proyecto: performance, audiovisual, sonido y plástica, siendo esta última la más ambiciosa y en la que se generaron varios resultados sorprendentes.</p>
+            <br>
+            <p>
+                Resultados:
+                    <br>
+                    <br>
+                Creación de pigmentos naturales. <br>
+                Aplicación de pigmentos en seco y húmedo. <br>
+                Obras en tela costeña con pigmentos naturales.
+            </p>
+            <button class="verMas" onclick="toggleContent('content4')">Ver más</button>
+        </div>
+    </div>
+    <div id="content4" class="hidden-content">
+        <div class="image-grid">
+            <img src="/img/preparacion/d2-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d3-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d4-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d5-d.webp" alt="Cuarta sesión" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="proceso">
+    <div class="content">
+        <img src="/img/preparacion/d1-e.webp" alt="Image 1" class="popup-image">
+        <div class="text">
+            <div class="title">Quinta sesión (25 de julio del 2024): Pre-ensayo y Montaje</div>
+            <p>La quinta sesión fue un pre-ensayo del montaje y performance de nuestro proyecto. Este ensayo fue fundamental para afinar los detalles de lo que se presentará en la exposición. Durante las semanas previas a la inauguración, continuaremos trabajando en esta pieza colaborativa para asegurar que cada aspecto esté perfectamente sincronizado y listo para el gran día.</p>
+            <br>
+            <p>
+                Resultados:
+                    <br>
+                    <br>
+                Ensayo de montaje y performance. <br>
+                Ajustes y mejoras en la pieza colaborativa. <br>
+                Preparación para la exposición.
+            </p>
+            <button class="verMas" onclick="toggleContent('content5')">Ver más</button>
+        </div>
+    </div>
+    <div id="content5" class="hidden-content">
+        <div class="image-grid">
+            <img src="/img/preparacion/d2-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d3-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d4-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d5-e.webp" alt="Quinta sesión" class="popup-image">
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        var images = document.querySelectorAll('.popup-image');
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            });
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
+
+<style>
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 24px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Montserrat';
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+    <!-- resultados -->
+
+    <div class="proceso">
+    <div class="content">
+        <img src="/img/preparacion/d1-d.webp" alt="Image 1" class="popup-image">
+        <div class="text">
+            <div class="title">Cuarta sesión (18 de julio del 2024): Trabajo con Pigmentos Naturales</div>
+            <p>Nuestra cuarta sesión se centró en los pigmentos naturales. Aprendimos a crear y comprender la diferencia entre pigmentos en seco y en húmedo, utilizando materiales como cúrcuma, carbón, óxido ferroso y aceites naturales. Trabajamos sobre tela costeña para darle un contexto cultural a nuestro arte. Esta sesión marcó el inicio de trabajos en paralelo en las cuatro rutas del proyecto: performance, audiovisual, sonido y plástica, siendo esta última la más ambiciosa y en la que se generaron varios resultados sorprendentes.</p>
+            <br>
+            <p>
+                Resultados:
+                    <br>
+                    <br>
+                Creación de pigmentos naturales. <br>
+                Aplicación de pigmentos en seco y húmedo. <br>
+                Obras en tela costeña con pigmentos naturales.
+            </p>
+            <button class="verMas" onclick="toggleContent('content4')">Ver más</button>
+        </div>
+    </div>
+    <div id="content4" class="hidden-content">
+        <div class="image-grid">
+            <img src="/img/preparacion/d2-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d3-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d4-d.webp" alt="Cuarta sesión" class="popup-image">
+            <img src="/img/preparacion/d5-d.webp" alt="Cuarta sesión" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="proceso">
+    <div class="content">
+        <img src="/img/preparacion/d1-e.webp" alt="Image 1" class="popup-image">
+        <div class="text">
+            <div class="title">Quinta sesión (25 de julio del 2024): Pre-ensayo y Montaje</div>
+            <p>La quinta sesión fue un pre-ensayo del montaje y performance de nuestro proyecto. Este ensayo fue fundamental para afinar los detalles de lo que se presentará en la exposición. Durante las semanas previas a la inauguración, continuaremos trabajando en esta pieza colaborativa para asegurar que cada aspecto esté perfectamente sincronizado y listo para el gran día.</p>
+            <br>
+            <p>
+                Resultados:
+                    <br>
+                    <br>
+                Ensayo de montaje y performance. <br>
+                Ajustes y mejoras en la pieza colaborativa. <br>
+                Preparación para la exposición.
+            </p>
+            <button class="verMas" onclick="toggleContent('content5')">Ver más</button>
+        </div>
+    </div>
+    <div id="content5" class="hidden-content">
+        <div class="image-grid">
+            <img src="/img/preparacion/d2-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d3-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d4-e.webp" alt="Quinta sesión" class="popup-image">
+            <img src="/img/preparacion/d5-e.webp" alt="Quinta sesión" class="popup-image">
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        var images = document.querySelectorAll('.popup-image');
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            });
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
+
+<style>
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 24px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-family: 'Montserrat';
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
 
 
     
